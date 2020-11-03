@@ -47,8 +47,10 @@ header {
 .squares__big div {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 30px;
     display: flex;
     text-align: start;
+    align-items: flex-end;
     width: 100%;
     height: auto;
 }
@@ -212,6 +214,7 @@ header {
 }
 
 .rev-big-green {
+    display: block;
     margin: 1.3195% 0 0 1.3195%; 
     padding: 15px; 
     background: #E3EBD3; ; 

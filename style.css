@@ -164,22 +164,36 @@ header {
 }
 
 .rev-small-img {
-    background: url(images/img.jpg) -230px -140px;
-    cursor: pointer;
     position: relative;
+    width: 100%;
+    height: 32vw;
+    background: url(images/img.jpg) 50% 58%;
+    cursor: pointer;
     filter: blur(0);
     transition: filter 0.2s linear;
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+    z-index: 1;
 }
 
-.rev-small-img:not(.warning):hover {
-    filter: blur(3px); 
+.sq-inner {
+    padding: 0;
+    position: relative;
+    z-index: 0;
 }
 
-.rev-small-img:hover .warning {
+.sq-inner:hover .small__warning {
     opacity: 1;
 }
 
-.warning {
+.rev-small-img:hover {
+    filter: blur(5px);
+}
+
+.small__warning {
     position: absolute;
     display: flex;
     opacity: 0;
@@ -194,6 +208,7 @@ header {
     top: 38%;
     left: 38%;
     transition: opacity 0.2s ease-in;
+    z-index: 2;
 }
 
 .rev-big-green {
